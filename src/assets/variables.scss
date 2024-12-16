@@ -1,0 +1,132 @@
+$black: #000;
+
+$primary-color: #1db954;
+$background-softdark: #404040;
+$background-dark: #121212;
+$background-base: #181818;
+$background-highlight: #282828;
+$text-primary: #ffffff;
+$text-secondary: #b3b3b3;
+
+$padding-small: 12px;
+$padding-medium: 24px;
+$padding-large: 32px;
+
+$margin-small: 12px;
+$margin-medium: 24px;
+$margin-large: 40px;
+
+$font-size-small: 14px;
+$font-size-medium: 16px;
+$font-size-large: 24px;
+$font-size-xlarge: 32px;
+
+$border-radius-small: 4px;
+$border-radius-medium: 8px;
+$border-radius-large: 16px;
+
+$gap-small: 8px;
+$gap-medium: 16px;
+$gap-large: 24px;
+
+$accent-color: #8b5cf6;
+$text-color: #ffffff;
+$gradient-start: rgba(139, 92, 246, 0.1);
+$gradient-end: rgba(0, 0, 0, 0.9);
+
+$header-padding-vertical: 16px;
+$header-padding-horizontal: 32px;
+$nav-button-size: 32px;
+$user-button-padding-vertical: 4px;
+$user-button-padding-horizontal: 12px;
+$user-button-border-radius: 20px;
+$avatar-size: 22px;
+$avatar-margin-right: 8px;
+$background-opacity: rgba(0, 0, 0, 0.7);
+$background-opacity-hover: rgba(0, 0, 0, 0.9);
+
+$avatar-width-height: 24px;
+$avatar-background: rgba(0, 0, 0, 0.2);
+$avatar-font-size: 12px;
+$avatar-margin-right-negative: -8px;
+$avatar-border: 2px solid currentColor;
+
+$play-button-width: 50px;
+$play-button-background-color: #1DB954;
+$play-button-padding: 10px;
+$play-button-font-size: 16px;
+$play-button-border-radius: 50%;
+$icon-width-height: 24px;
+
+$album-card-border-radius: 16px;
+$album-card-padding: 24px;
+$album-image-border-radius: 16px;
+$album-image-margin-bottom: 16px;
+$album-title-font-size: 2rem;
+$album-description-font-size: 0.9rem;
+$album-description-margin-bottom: 12px;
+$album-stats-font-size: 0.8rem;
+
+$track-item-padding: 24px;
+$track-item-background-color: rgba(255, 255, 255, 0.1);
+$track-item-hover-background-color: rgba(255, 255, 255, 0.15);
+$track-item-border-radius: 16px;
+$track-item-artwork-width: 48px;
+$track-item-artwork-height: 48px;
+$track-item-artwork-border-radius: 0.25rem;
+$track-item-artwork-margin-right: 1rem;
+$track-item-title-font-size: 0.9375rem;
+$track-item-title-margin-bottom: 0.25rem;
+$track-item-plays-gap: 0.375rem;
+$track-item-plays-color: rgba(255, 255, 255, 0.6);
+$track-item-plays-font-size: 0.875rem;
+$track-item-plays-icon-opacity: 0.6;
+$track-item-like-padding: 0.5rem;
+$track-item-like-color: rgba(255, 255, 255, 0.6);
+$track-item-like-hover-color: rgba(255, 255, 255, 0.8);
+$track-item-like-active-color: #22c55e;
+
+$search-container-width: 364px;
+$search-icon-left: 12px;
+$search-icon-width-height: 20px;
+$search-input-height: 40px;
+$search-input-border-radius: 20px;
+$search-input-padding: 0 40px;
+$search-input-background-color: rgba(255, 255, 255, 0.1);
+$search-input-focus-background-color: rgba(255, 255, 255, 0.15);
+
+
+$player-padding-vertical: 16px;
+$player-padding-horizontal: 24px;
+$player-height: 90px;
+$album-art-width-height: 56px;
+$track-info-gap: 12px;
+$track-name-font-weight: 500;
+$artist-font-size: 0.9em;
+$time-font-size: 0.8em;
+$progress-bar-height: 4px;
+$progress-bar-border-radius: 2px;
+$progress-fill-width: 30%;
+$volume-slider-width: 100px;
+$volume-fill-width: 70%;
+$control-button-width: 24px;
+$control-button-play-width-height: 32px;
+$control-button-play-border-radius: 50%;
+
+@mixin hover-scale {
+	&:hover {
+		transform: scale(1.05);
+	}
+}
+
+@mixin cover-after {
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 50%;
+		background: linear-gradient(rgba(139, 92, 246, 0.1), rgba(0, 0, 0, 0.9));
+	}
+}
